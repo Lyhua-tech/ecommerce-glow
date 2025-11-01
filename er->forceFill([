@@ -1,0 +1,14 @@
+[90m= [39m[34;4mApp\Models\User[39;24m {#6166
+    [34mid[39m: [35m1[39m,
+    [34mname[39m: "[32mTest User[39m",
+    [34memail[39m: "[32mtest@example.com[39m",
+    [34memail_verified_at[39m: "[32m2025-10-21 11:26:28[39m",
+    #[33mpassword[39m: "[32m$2y$12$qGG27CAdCwMEJn6iFzGKsuDIM04opyTHVm2GNBHaxO0DzZxFUEPhe[39m",
+    #[33mremember_token[39m: "[32mahe51m7ltr[39m",
+    [34mcreated_at[39m: "[32m2025-10-21 11:26:28[39m",
+    [34mupdated_at[39m: "[32m2025-10-21 11:26:28[39m",
+    #[33mtwo_factor_secret[39m: "[32meyJpdiI6ImIzSlBWMWx3K1I5NWRiMmFBMGNsQXc9PSIsInZhbHVlIjoiWjVVV1hFU3dBT3NIOWRwMFJ3TFY1clpDcDFNaVRzdWxBUGR2RTRSejZnST0iLCJtYWMiOiI0NTFlODMwM2ZkZjFiMDk0M2MzOGQ3ZWE1YWI0ZjJlMzcxY2M4NDQyYjdiZDQ5ZTUwZWFjYTc2Nzc3ZGY5NmRkIiwidGFnIjoiIn0=[39m",
+    #[33mtwo_factor_recovery_codes[39m: "[32meyJpdiI6ImNiNks4ZXVmVWtqVWEzd0x1RzlnNlE9PSIsInZhbHVlIjoiTXd3eDZ5aGIxbnplTjRxb1lYSnliNlF3dlg1Y2R3MHVIVm1mNnM0bnZEL3VUV0p4Zld2N2hPLzZrQ2Z4aUFaSyIsIm1hYyI6Ijk3NGJjOWNiM2FiYjY5ZjgzZjE5MGVmNjA2ZjYyYWMwNzBjOWRkZTQ5ZjBkZWY1MThjNWI5MzIyNjFlZWE1YzciLCJ0YWciOiIifQ==[39m",
+    [34mtwo_factor_confirmed_at[39m: "[32m2025-10-21 11:26:28[39m",
+  }
+
