@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+    mysql:
+        image: mysql:8.0
+        container_name: my-project-mysql
+        restart: unless-stopped
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD:-rootpassword}' # Use .env file or default
+            MYSQL_DATABASE: '${DB_DATABASE:-laravel}'
+            MYSQL_USER: '${DB_USERNAME:-sail}'
+            MYSQL_PASSWORD: '${DB_PASSWORD:-password}'
+        ports:
+            # Map host port 3306 to container port 3306
+            - '${DB_PORT:-3306}:3306'
+        volumes:
+            # This volume persists the database data
+            - mysql-data:/var/lib/mysql
+            # This volume mounts your SQL backup file for initialization
+            # The container will automatically run any .sql file in this directory
+            - ./docker/mysql/initdb:/docker-entrypoint-initdb.d
+        networks:
+            - my-project-network
+
+# Top-level volumes definition
+volumes:
+    mysql-data:
+        driver: local
+
+# Top-level networks definition
+networks:
+    my-project-network:
+        driver: bridge
